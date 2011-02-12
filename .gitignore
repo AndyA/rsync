@@ -1,4 +1,5 @@
 *.[oa]
+*.dSYM
 *~
 dummy
 ID
