@@ -340,7 +340,7 @@ static void output_summary(void)
 			"sent %s bytes  received %s bytes  %s bytes/sec\n",
 			human_num(total_written), human_num(total_read),
 			human_dnum((total_written + total_read)/(0.5 + (endtime - starttime)), 2));
-		rprintf(FINFO, "total size is %s  speedup is %s%s\n",
+		rprintf(FINFO, "total size is %s bytes  speedup is %s%s%\n",
 			human_num(stats.total_size),
 			comma_dnum((double)stats.total_size / (total_written+total_read), 2),
 			write_batch < 0 ? " (BATCH ONLY)" : dry_run ? " (DRY RUN)" : "");
